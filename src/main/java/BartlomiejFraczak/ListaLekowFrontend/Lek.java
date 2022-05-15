@@ -10,7 +10,6 @@ import java.net.URL;
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.List;
 
 public class Lek {
 
@@ -19,15 +18,15 @@ public class Lek {
     private LocalDate data_waznosci;
     private int ilosc_opakowan_w_magazynie;
 
-//    public Lek() {
-//    }
-//
-//    public Lek(long id, String nazwa_leku, String data_waznosci, int ilosc_opakowan_w_magazynie) {
-//        this.id = id;
-//        this.nazwa_leku = nazwa_leku;
-//        this.data_waznosci = data_waznosci;
-//        this.ilosc_opakowan_w_magazynie = ilosc_opakowan_w_magazynie;
-//    }
+    public Lek() {
+    }
+
+    public Lek(long id, String nazwa_leku, LocalDate data_waznosci, int ilosc_opakowan_w_magazynie) {
+        this.id = id;
+        this.nazwa_leku = nazwa_leku;
+        this.data_waznosci = data_waznosci;
+        this.ilosc_opakowan_w_magazynie = ilosc_opakowan_w_magazynie;
+    }
 
     public long getId() {
         return id;

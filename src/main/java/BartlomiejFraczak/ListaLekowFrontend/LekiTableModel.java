@@ -1,10 +1,7 @@
 package BartlomiejFraczak.ListaLekowFrontend;
 
 import javax.swing.table.AbstractTableModel;
-import javax.swing.table.DefaultTableModel;
-import javax.swing.table.TableModel;
 import java.io.IOException;
-import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
