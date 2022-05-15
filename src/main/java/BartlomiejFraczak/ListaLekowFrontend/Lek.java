@@ -65,7 +65,7 @@ public class Lek {
         this.ilosc_opakowan_w_magazynie = ilosc_opakowan_w_magazynie;
     }
 
-    public List<Lek> getLeki() throws IOException {
+    public ArrayList<Lek> getLeki() throws IOException {
 
         // Połączenie z backendem:
         URL url = new URL("http://localhost:8090/");
@@ -85,7 +85,7 @@ public class Lek {
         // JSON -> List<Lek>:
         ObjectMapper objectMapper = new ObjectMapper();
         Lek[] leki = objectMapper.readValue(content.toString(), Lek[].class);
-        List<Lek> lekiList = new ArrayList(Arrays.asList(leki));
+        ArrayList<Lek> lekiList = new ArrayList(Arrays.asList(leki));
 
         return lekiList;
 
